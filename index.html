@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="profile">
+            <img src="Images/Mimi.png" alt="Profile Picture">
+            <h2>Ambia Ferdous Mimi</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <button class="menu-btn" id="menu-btn">☰</button>
+
+
+
+<header>
+  <div class="content">
+    <h1 class="content-title">Ambia Ferdous Mimi</h1>
+    <p class="description">I am a hardworking, honest individual, always willing to learn new skills. Quite friendly, helpful and polite, have a good sense of humor.</p>
+</div>
+
+</header>
+
+
+
+<main>
+
+  <!-- About section -->
+ <section id="about">
+  <div class="about-container">
+    <h2 class="about-container-heading">About Me</h2>
+    <p class="about-container-description">
+        I am a hardworking, honest individual, always willing to learn new skills. Quite friendly, helpful, and polite, with a good sense of humor. 
+        To fulfill my objective, I am outgoing and tactful and able to listen effectively when solving problems.
+    </p>
+
+    <!-- Image on the left, Info on the right -->
+<div class="about-container-lite">
+  <div class="about-container-image">
+    <img src="Images/about-images.jpg" alt="Profile Picture">
+</div>
+
+<div class="info">
+    <h3 class="info-title">Web Developer.</h3>
+    <p class="info-italic">Skilled at writing well-designed, testable, and efficient code using current best practices in Web development. 
+        Fast learner, hard worker, and team player proficient in an array of scripting languages.</p>
+    <ul>
+        <li><strong>Phone:</strong> <a href="tel:+8801949215019">+8801949215019</a></li>
+        <li><strong>Email:</strong> <a href="mailto:njmsaikat@gmail.com">njmsaikat@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">Github Profile</a></li>
+        <li><strong>Degree:</strong> B.Sc. in ECE</li>
+        <li><strong>Freelance:</strong> Available</li>
+        <li><strong>City:</strong> Dhaka, Bangladesh</li>
+    </ul>
+</div>
+</div>
+
+</div>
+ </section>
+
+
+ <!-- portfolio section -->
+
+ <section id="portfolio">
+
+    <div class="portfolio-container">
+        <h2 class="portfolio-heading">Portfolio</h2>
+        <p class="portfolio-description">
+            Here are some of my projects showcasing my skills in C, Java, and Web Development.
+        </p>
+    
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="c">C</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="webdev">Web Development</button>
+        </div>
+    
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="c">
+                <img src="Images/C-programming.jpg" alt="C Project">
+                <div class="portfolio-info">
+                    <h3>C Project</h3>
+                    <p>System programming and algorithms implemented in C.</p>
+                </div>
+            </div>
+    
+            <div class="portfolio-item" data-category="java">
+                <img src="Images/java.jpg" alt="Java Project">
+                <div class="portfolio-info">
+                    <h3>Java Project</h3>
+                    <p>Object-oriented application built using Java.</p>
+                </div>
+            </div>
+    
+            <div class="portfolio-item" data-category="webdev">
+                <img src="Images/web-dev.jpg" alt="Web Dev Project">
+                <div class="portfolio-info">
+                    <h3>Web Development</h3>
+                    <p>Modern and responsive website using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+ </section>
+
+
+ <section id="services">
+    <div class="services-container">
+        <h2 class="services-heading">Services</h2>
+        <p class="services-description">
+            Experienced & skilled in Web Development and Java programming. I have hands-on experience building scalable and efficient applications using modern technologies.
+        </p>
+    
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-laptop-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>
+                    Building dynamic, responsive, and SEO-friendly websites with modern technologies. Expertise in HTML, CSS, JavaScript, PHP, and MySQL.
+                </p>
+            </div>
+    
+            <div class="service-item">
+                <i class="fab fa-java service-icon"></i>
+                <h3>Java Programming</h3>
+                <p>
+                    Developing object-oriented applications using Java. Experience with Spring Boot, JDBC, and RESTful APIs for backend development.
+                </p>
+            </div>
+    
+            <div class="service-item">
+                <i class="fas fa-database service-icon"></i>
+                <h3>Backend Development</h3>
+                <p>
+                    Strong knowledge of database design, SQL, and backend frameworks. Creating secure and optimized server-side applications.
+                </p>
+            </div>
+    
+            <div class="service-item">
+                <i class="fas fa-code service-icon"></i>
+                <h3>API Development</h3>
+                <p>
+                    Building and integrating RESTful APIs for seamless communication between frontend and backend systems.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+ </section>
+
+
+ <!-- skill section -->
+
+ <section>
+
+  <div class="skills-container">
+    <h2 class="skills-heading">Skills</h2>
+    <p class="skills-description">
+        Here are some of my technical skills. I use modern tools and methodologies to achieve efficiency.
+    </p>
+
+    <div class="skills-list">
+        <div class="skill">
+            <span>C</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+            <span>85%</span>
+        </div>
+
+        <div class="skill">
+            <span>C++</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%;"></div>
+            </div>
+            <span>80%</span>
+        </div>
+
+        <div class="skill">
+            <span>Java</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%;"></div>
+            </div>
+            <span>75%</span>
+        </div>
+
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 70%;"></div>
+            </div>
+            <span>70%</span>
+        </div>
+
+        <div class="skill">
+            <span>HTML</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 100%;"></div>
+            </div>
+            <span>100%</span>
+        </div>
+
+        <div class="skill">
+            <span>CSS</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+            <span>90%</span>
+        </div>
+    </div>
+</div>
+
+ </section>
+
+</main>
+ 
+
+
+
+<script src="index.js"></script>
+   
+</body>
+</html>
+
+
+
