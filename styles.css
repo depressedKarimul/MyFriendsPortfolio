@@ -736,7 +736,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+
   padding: 15px 30px;
   flex-wrap: wrap;
 }
@@ -796,10 +796,164 @@ iframe {
       flex-direction: column;
       text-align: center;
       padding: 20px;
+      width: 100%;
   }
 
   .footer-left, .footer-right {
       justify-content: center;
       margin: 10px 0;
+  }
+}
+
+
+
+
+
+/* Resume Section */
+.resume-section {
+  margin-left: 270px; /* Mandatory left margin */
+  padding: 40px;
+  max-width: 900px;
+  background: white;
+  padding: 40px 40px 40px 100px;
+  border-radius: 8px;
+}
+
+/* Resume Header */
+.resume-header {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 100px;
+ 
+}
+
+.resume-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.resume-summary {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Resume Sections */
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #34495e;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Timeline */
+.timeline {
+  padding-left: 15px;
+  border-left: 3px solid #007bff;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: #007bff;
+  border-radius: 50%;
+}
+
+.timeline-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  margin-left: 10px;
+}
+
+.timeline-company {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  margin-top: 3px;
+}
+
+.timeline-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .resume-section {
+      margin-left: 50px; /* Reduce margin on smaller screens */
+      padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume-section {
+      margin-left: 20px;
+      padding: 20px;
+  }
+
+  .resume-title {
+      font-size: 28px;
+  }
+
+  .section-title {
+      font-size: 22px;
+  }
+
+  .timeline-title {
+      font-size: 16px;
+  }
+
+  .timeline-description {
+      font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .resume-section {
+      margin-left: 10px;
+      padding: 15px;
+  }
+
+  .resume-title {
+      font-size: 24px;
+  }
+
+  .section-title {
+      font-size: 20px;
+  }
+
+  .timeline-title {
+      font-size: 15px;
+  }
+
+  .timeline-description {
+      font-size: 12px;
   }
 }
