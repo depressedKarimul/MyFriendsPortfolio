@@ -807,24 +807,21 @@ iframe {
 
 
 
-
-
 /* Resume Section */
 .resume-section {
   margin-left: 270px; /* Mandatory left margin */
-  padding: 40px;
+  /* padding: 40px; */
   max-width: 900px;
   background: white;
-  padding: 40px 40px 40px 100px;
+  padding: 40px 40px 40px 40px;
   border-radius: 8px;
 }
 
 /* Resume Header */
 .resume-header {
   text-align: left;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   margin-top: 100px;
- 
 }
 
 .resume-title {
@@ -856,14 +853,29 @@ iframe {
 
 /* Timeline */
 .timeline {
-  padding-left: 15px;
-  border-left: 3px solid #007bff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .timeline-item {
+  width: 45%; /* Ensures two items per row aligned to left and right */
+  display: inline-block;
+  vertical-align: top;
   margin-bottom: 20px;
   padding-left: 15px;
   position: relative;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  text-align: left;
+}
+
+.timeline-item:nth-child(even) {
+  text-align: right;
+  padding-right: 15px;
 }
 
 .timeline-item::before {
@@ -924,6 +936,16 @@ iframe {
 
   .section-title {
       font-size: 22px;
+  }
+
+  .timeline {
+      flex-direction: column;
+  }
+
+  .timeline-item {
+      width: 100%;
+      text-align: left !important;
+      padding-right: 0 !important;
   }
 
   .timeline-title {
